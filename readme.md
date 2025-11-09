@@ -1,19 +1,25 @@
-# SimTxtSeg: Weakly-Supervised Medical Image Segmentation with Simple Text Cues
-Paper : [arxiv](https://arxiv.org/abs/2406.19364),  has been acceptd by ***MICCAI2024✨***
+[//]: # (# SimTxtSeg: Weakly-Supervised Medical Image Segmentation with Simple Text Cues)
 
-by Yuxin Xie, Tao Zhou, Yi Zhou, Geng Chen
+[//]: # (Paper : [arxiv]&#40;https://arxiv.org/abs/2406.19364&#41;,  has been acceptd by ***MICCAI2024✨***)
+
+[//]: # ()
+[//]: # (by Yuxin Xie, Tao Zhou, Yi Zhou, Geng Chen)
 
 
 
 ## 🙋 Introduction
-Our contribution consists of two key components: an effective Textual-to-Visual Cue Converter that produces visual prompts from text prompts on medical images, and a text-guided segmentation model with Text-Vision Hybrid Attention that fuses text and image features. We evaluate our framework on two medical image segmentation tasks: colonic polyp segmentation and MRI brain tumor segmentation, and achieve consistent state-of-the-art performance.
 
-<img src=images/frame.png width=700 />
-<img src=images/attention.png width=700/>
+[//]: # (Our contribution consists of two key components: an effective Textual-to-Visual Cue Converter that produces visual prompts from text prompts on medical images, and a text-guided segmentation model with Text-Vision Hybrid Attention that fuses text and image features. We evaluate our framework on two medical image segmentation tasks: colonic polyp segmentation and MRI brain tumor segmentation, and achieve consistent state-of-the-art performance.)
+
+[//]: # (<img src=images/frame.png width=700 />)
+
+[//]: # (<img src=images/attention.png width=700/>)
 
 ## 🚀 Updates
-* `[2024.07.07]` We are excited to release : ✅dataset and ✅TVCC code.
-* `[2024.09.25]` We are excited to release : ✅TVHA code.
+
+[//]: # (* `[2024.07.07]` We are excited to release : ✅dataset and ✅TVCC code.)
+
+[//]: # (* `[2024.09.25]` We are excited to release : ✅TVHA code.)
 
 
 ## 📖 Dataset Preparation
@@ -34,9 +40,9 @@ Our contribution consists of two key components: an effective Textual-to-Visual 
 Clone the whole repository and install the dependencies.
 
 ```
-conda create -n SimTxtSeg python=3.11
-conda activate SimTxtSeg
-git clone https://github.com/xyx1024/SimTxtSeg.git
+conda create -n USTxtSeg python=3.11
+conda activate USTxtSeg
+git clone https://github.com/xyx1024/USTxtSeg.git
 pip install -r requirements.txt
 ```
 
@@ -84,7 +90,7 @@ Use the checkpoint of SAM and TVCC to generate the pseudo masks.
 cd TVCC/polyp_grounding_dino
 python TVCC_Sam.py
 ```
-### 4. SimTxtSeg with TVHA
+### 4. USTxtSeg with TVHA
 use pseudo mask and text prompt to supervise model.
 ```
 python train.py
@@ -94,18 +100,26 @@ python test.py
 ## 🎯 Results
 **Comparison experiments and Ablation study:**
 
-<img src=images/results.png width=700 />
+[//]: # ()
+[//]: # (<img src=images/results.png width=700 />)
 
+[//]: # ()
 **Visualization**
 
-<img src=images/visualization.png width=700 />
+[//]: # ()
+[//]: # (<img src=images/visualization.png width=700 />)
 
+[//]: # ()
 ## 🗓️ Ongoing
 - [x] paper release
-- [x] dataset release
-- [x] TVCC pretrain and test code release
-- [x] SimTxtSeg with TVHA model release.
 
+[//]: # (- [x] dataset release)
+
+[//]: # (- [x] TVCC pretrain and test code release)
+
+[//]: # (- [x] SimTxtSeg with TVHA model release.)
+
+[//]: # ()
 ## 🎫 License
 This project is released under the Apache 2.0 license.
 
@@ -116,19 +130,16 @@ GroundingDINO: https://github.com/IDEA-Research/GroundingDINO
 
 Segment Anything: https://github.com/facebookresearch/segment-anything?tab=readme-ov-file
 
+[//]: # ()
 ## ✒️ Citation
-If you find this repository useful, please consider citing this paper:
-```
-@InProceedings{Xie_SimTxtSeg_MICCAI2024,
-        author = { Xie, Yuxin and Zhou, Tao and Zhou, Yi and Chen, Geng},
-        title = { { SimTxtSeg: Weakly-Supervised Medical Image Segmentation with Simple Text Cues } },
-        booktitle = {proceedings of Medical Image Computing and Computer Assisted Intervention -- MICCAI 2024},
-        year = {2024},
-        publisher = {Springer Nature Switzerland},
-        volume = {LNCS 15008},
-        month = {October},
-        page = {634 -- 644}
-}
-```
-## 📬 Contact
-If you have any question, please feel free to contact silver_iris@163.com.
+
+[//]: # (If you find this repository useful, please consider citing this paper:)
+
+[//]: # (```)
+
+
+[//]: # (```)
+
+[//]: # (## 📬 Contact)
+
+[//]: # (If you have any question, please feel free to contact silver_iris@163.com.)
