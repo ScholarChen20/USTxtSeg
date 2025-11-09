@@ -1,0 +1,7 @@
+/.vscode
+SimTxtSeg/results/*
+SimTxtSeg/.idea/*
+SimTxtSeg/data/*
+SimTxtSeg/pretrained_ckpt/*
+SimTxtSeg/models/*
+SimTxtSeg/visualize.py
